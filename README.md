@@ -2,7 +2,7 @@
 
 # 🍑 DashboardFruit – Pastel Admin Dashboard Template
 
-![Logo](https://github.com/HoBichLien/adminfruit/blob/main/logo.png?raw=true)
+![Logo](https://github.com/HoBichLien/adminfruit/blob/main/thumnail.png?raw=true)
 
 ## 📘 Documentation
 📗 [View Full Documentation](https://<your-demo>.vercel.app/documentation/documentation.html)
