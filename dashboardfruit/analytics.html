@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD ANALYTICS</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/note.css">
+    <link rel="stylesheet" href="assets/css/analytics.css">
+</head>
+<body>
+     <header>
+        <div class="dash_brand">
+            <div class="dash_logo">
+                <img src="assets/images/logo.png"  alt="">
+            </div>
+            <strong>Admin</strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" >
+                    <i class="fa fa-home" style="color: red;"></i>Dashboard</a>
+                </li>
+                <li><a href="order.html">
+                    <i class="fa fa-book" style="color: red;"></i>
+                    Order</a>
+                </li>
+                <li><a href="product.html">
+                    <i class="fa fa-product-hunt" style="color: red;"></i>
+                    Products</a>
+                </li>
+                <li><a href="customers.html">
+                    <i class="fa fa-users" style="color: red;"></i>
+                    Customers</a>
+                </li>
+                <li><a href="user.html">
+                    <i class="fa fa-user-o" style="color: red;"></i>
+                    Users</a>
+                </li>
+                <li><a href="report.html">
+                    <i class="fa fa-filter" style="color: red;"></i>
+                    Report</a>
+                </li>
+                <li><a href="setting.html">
+                    <i class="fa fa-cog" style="color: red;"></i>
+                    Setting</a>
+                </li>
+                <li><a href="analytics.html"  class="active">
+                    <i class="fa fa-bar-chart" style="color: red;"></i>
+                    Analytics</a>
+                </li>
+                <li><a href="config.html">
+                    <i class="fa fa-cogs" style="color: red;"></i>
+                    Config</a></li>
+            </ul>
+        </nav>
+        <div class="action">
+            <div class="icon-btn">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Admin
+            </div>
+        </div>
+    </header>
+    <!-- analytics -->
+     <div class="container_an">
+        <div class="stat_an">
+            <div class="card_an stat_card_an">
+                <span class="stst_title">
+                    Total Sales 
+                </span>
+                <span class="stat_value_an">
+                    $25324
+                </span>
+                <span class="stat_trend_an">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                    +12% from last month
+                </span>
+            </div>
+             <div class="card_an stat_card_an">
+                <span class="stst_title">
+                    Total Order  
+                </span>
+                <span class="stat_value_an">
+                    1245
+                </span>
+                <span class="stat_trend_an">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                    +9% from last month
+                </span>
+            </div>
+             <div class="card_an stat_card_an">
+                <span class="stst_title">
+                    Customers 
+                </span>
+                <span class="stat_value_an">
+                    876
+                </span>
+                <span class="stat_trend_an">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                    +15% new users
+                </span>
+            </div>
+            <div class="card_an stat_card_an">
+                <span class="stst_title">
+                    Growth Rate 
+                </span>
+                <span class="stat_value_an">
+                    24%
+                </span>
+                <span class="stat_trend_an">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                    +3.2%
+                </span>
+            </div>
+        </div>
+        <div class="chart_an">
+            <div class="card_an">
+                <h3>Monthly Sales</h3>
+                <canvas id="salesChart"></canvas>
+            </div>
+            <div class="card_an">
+                <h3>Top Product</h3>
+                <canvas id="productChart"></canvas>
+            </div>
+        </div>
+     </div>
+     <footer><p>© 2025 Fruit Store. Designed & Developed by eProjectBeginner. All rights reserved.</p> </footer>
+    
+     <script src="assets/js/chart.umd.min.js"></script>
+     <script src="assets/js/analytics.js"></script>
+</body>
+</html>

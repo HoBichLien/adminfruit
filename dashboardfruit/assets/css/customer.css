@@ -1,0 +1,65 @@
+.container_cus{
+    max-width: 1200px;
+    margin: 28px auto;
+    padding: 0 20px;
+
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: antiquewhite;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 16px 18px rgb(249, 140, 6);
+}
+
+th,td{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid rgb(206, 203, 203);
+
+}
+
+th{
+    background-color: rgb(225, 225, 243);
+    color: rgb(248, 7, 7);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+tr:hover{
+    background-color: rgb(222, 194, 248);
+}
+
+.ava_customer{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.status_cus{
+    padding: 6px 6px;
+    border-radius: 20px;
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+.active_cus{
+    background-color: rgb(70, 125, 243);
+    color: white;
+    align-items: center;
+    margin: 15px 15px;
+    font-weight: 800;
+}
+
+.inactive{
+    background-color: rgb(236, 112, 11);
+    color: white;
+    align-items: center;
+    margin: 15px 15px;
+    font-weight: 800;
+}

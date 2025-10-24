@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD CONFIG</title>
+    <link rel="stylesheet" href="assets/css/note.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/config.css">
+</head>
+<body>
+     <header>
+        <div class="dash_brand">
+            <div class="dash_logo">
+                <img src="assets/images/logo.png"  alt="">
+            </div>
+            <strong>Admin</strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">
+                    <i class="fa fa-home" style="color: red;"></i>Dashboard</a>
+                </li>
+                <li><a href="order.html">
+                    <i class="fa fa-book" style="color: red;"></i>
+                    Order</a>
+                </li>
+                <li><a href="product.html">
+                    <i class="fa fa-product-hunt" style="color: red;"></i>
+                    Products</a>
+                </li>
+                <li><a href="customers.html">
+                    <i class="fa fa-users" style="color: red;"></i>
+                    Customers</a>
+                </li>
+                <li><a href="user.html">
+                    <i class="fa fa-user-o" style="color: red;"></i>
+                    Users</a>
+                </li>
+                <li><a href="report.html">
+                    <i class="fa fa-filter" style="color: red;"></i>
+                    Report</a>
+                </li>
+                <li><a href="setting.html">
+                    <i class="fa fa-cog" style="color: red;"></i>
+                    Setting</a>
+                </li>
+                <li><a href="analytics.html">
+                    <i class="fa fa-bar-chart" style="color: red;"></i>
+                    Analytics</a>
+                </li>
+                <li><a href="config.html"  class="active">
+                    <i class="fa fa-cogs" style="color: red;"></i>
+                    Config</a></li>
+            </ul>
+        </nav>
+        <div class="action">
+            <div class="icon-btn">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Admin
+            </div>
+        </div>
+    </header>
+
+    <div class="container_con">
+        <div class="top_con">
+            <h1>Configuration Dashboard</h1>
+            <button id="darkToggle">
+                <i class="fa fa-moon-o" aria-hidden="true"></i>
+                Dark Mode
+            </button>
+        </div>
+        <div class="stats_row_con">
+            <div class="card_con">
+                <h3>Orders</h3>
+                <p>
+                    <i class="fa fa-file-text-o"></i>
+                    124
+                </p>
+            </div>
+            <div class="card_con">
+                <h3>Revenue</h3>
+                <p>
+                    <i class="fa fa-money"></i>
+                    $5678
+                </p>
+            </div>
+            <div class="card_con">
+                <h3>Users</h3>
+                <p>
+                    <i class="fa fa-user"></i>
+                    789
+                </p>
+            </div>
+            <div class="card_con">
+                <h3>Growth</h3>
+                <p>
+                    <i class="fa fa-line-chart"></i>
+                    +20%
+                </p>
+            </div>
+        </div>
+        <div class="chart_con">
+            <div class="chart_box_con">
+                <canvas id="lineChart"></canvas>
+            </div>
+            <div class="chart_box_con">
+                <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+        <div class="btn_row_con">
+            <button id="saveBtn">
+                <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                Save 
+            </button>
+            <button id="resetBtn">
+                <i class="fa fa-recycle" aria-hidden="true"></i>
+                Reset
+            </button>
+            <button id="exportBtn">
+                <i class="fa fa-upload" aria-hidden="true"></i>
+                Export 
+            </button>
+        </div>
+        <div class="setting_con">
+            <div class="section_con">
+                <h2>UI Preference</h2>
+                <label for="">Accent Color</label>
+                <div class="color_con">
+                    <input type="color" id="accentColor" value="#4caf50">
+                    <button id="applyAccent">Apply </button>
+                </div>
+                <div class="upload_box_con">
+                    <label for="">Upload Logo </label>
+                    <input type="file" id="uploadLogo" accept="image/*">
+                </div>
+            </div>
+            <div class="section_con">
+                <h2>Social Links</h2>
+                <label for=""> Facebook </label>
+                <input type="text" placeholder="facebook.com/yourpage">
+                <label for=""> Instagram  </label>
+                <input type="text" placeholder="intagram.com/yourpage">
+                <label for=""> Twitter  </label>
+                <input type="text" placeholder="twitter.com/yourpage">
+            </div>
+        </div>
+        <div class="table_section_con">
+            <button class="add_con">
+                +Add Order 
+            </button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>OrderID</th>
+                        <th>Customer</th>
+                        <th>Total </th>
+                        <th>Status </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Alice</td>
+                        <td>$124</td>
+                        <td class="ship">Shiped</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>David</td>
+                        <td>$524</td>
+                        <td class="pen">Pending</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>John</td>
+                        <td>$64</td>
+                        <td class="deli">Delivered</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer><p>© 2025 Fruit Store. Designed & Developed by eProjectBeginner. All rights reserved.</p> </footer>
+    <script src="assets/js/chart.umd.min.js"></script>
+    <script src="assets/js/config.js"></script>
+</body>
+</html>

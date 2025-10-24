@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD SETTING</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/note.css">
+    <link rel="stylesheet" href="assets/css/setting.css">
+</head>
+<body>
+     <header>
+        <div class="dash_brand">
+            <div class="dash_logo">
+                <img src="assets/images/logo.png"  alt="">
+            </div>
+            <strong>Admin</strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" >
+                    <i class="fa fa-home" style="color: red;"></i>Dashboard</a>
+                </li>
+                <li><a href="order.html">
+                    <i class="fa fa-book" style="color: red;"></i>
+                    Order</a>
+                </li>
+                <li><a href="product.html">
+                    <i class="fa fa-product-hunt" style="color: red;"></i>
+                    Products</a>
+                </li>
+                <li><a href="customers.html">
+                    <i class="fa fa-users" style="color: red;"></i>
+                    Customers</a>
+                </li>
+                <li><a href="user.html">
+                    <i class="fa fa-user-o" style="color: red;"></i>
+                    Users</a>
+                </li>
+                <li><a href="report.html">
+                    <i class="fa fa-filter" style="color: red;"></i>
+                    Report</a>
+                </li>
+                <li><a href="setting.html" class="active">
+                    <i class="fa fa-cog" style="color: red;"></i>
+                    Setting</a>
+                </li>
+                <li><a href="analytics.html">
+                    <i class="fa fa-bar-chart" style="color: red;"></i>
+                    Analytics</a>
+                </li>
+                <li><a href="config.html">
+                    <i class="fa fa-cogs" style="color: red;"></i>
+                    Config</a></li>
+            </ul>
+        </nav>
+        <div class="action">
+            <div class="icon-btn">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Admin
+            </div>
+        </div>
+    </header>
+
+    <!-- setting  -->
+     <div class="container_set">
+        <div class="card_set">
+            <h2>Store Infomation</h2>
+            <form id="settingsForm">
+                <label for="">Store Name</label>
+                <input type="text" placeholder="Fresh Fruit Shop" required>
+                <label for="">Phone</label>
+                <input type="tel" placeholder="+84 123456799">
+                <label for="">Email</label>
+                <input type="email" placeholder="Contact@gmail.com " required>
+                <label for="">Address</label>
+                <textarea rows="13" placeholder="123 street hcm city"></textarea>
+                <label for="">Logo</label>
+                <div class="preview_set">
+                    <img src="assets/images/logo.png" alt="Logo"  id="logoPreview">
+                    <input type="file" id="logoInput" accept="image/*">
+                </div>
+                <button class="nut_set" type="submit">Save Settings</button>
+            </form>
+        </div>
+        <div class="card_set">
+            <h2>Theme Customization</h2>
+            <label for="primaryColor">Primary Color</label>
+            <input class="color_set" type="color" id="primaryColor" value="#43a047">
+            <label for="accentColor">Accent Color</label>
+            <input class="color_set" type="color" id="accentColor" value="#fbc02d">
+            <button class="nut_set" onclick="applyTheme()">Apply Theme</button>
+        </div>
+     </div>
+     <footer><p>© 2025 Fruit Store. Designed & Developed by eProjectBeginner. All rights reserved.</p> </footer>
+    <script src="assets/js/setting.js"></script>
+</body>
+</html>

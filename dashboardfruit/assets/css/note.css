@@ -1,0 +1,91 @@
+/* =============header/nav================ */
+
+header{
+    background-color: #a5f8aa;
+    padding: 12px 32px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.dash_brand{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.dash_logo{
+    width: 50px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #f6f8fa;
+    color: var(--mauchinh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash_logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.dash_brand strong {
+  color: #ef2020;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.nav a:hover, nav a.active {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+nav a.active, nav a:hover{
+    color: rgb(189, 192, 5);
+}
+
+.active{
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-btn{
+    padding: 8px ;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #c3047d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+footer{
+    text-align: center;
+    margin-top: 40px;
+    color: gray;
+}

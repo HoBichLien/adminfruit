@@ -1,0 +1,78 @@
+.container_or{
+    max-width: 1200px;
+    margin: 28px auto;
+    padding: 0 20px;
+
+}
+
+.card_or{
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px red;
+
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+th,td{
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 2px solid rgb(133, 132, 134);
+}
+
+th{
+    background-color: beige;
+    color: brown;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+tr:hover{
+    background-color: aquamarine;
+
+}
+
+.status_or{
+    padding: 4px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.Completed{
+    background-color: white;
+    color: blue;
+}
+.Pending{
+    background-color: rgb(115, 255, 28);
+    color: blue;
+}
+.Canceled{
+    background-color: rgb(240, 186, 24);
+    color: blue;
+}
+.Delivered{
+    background-color: rgb(91, 196, 244);
+    color: blue;
+}
+
+.btn_or{
+    padding: 6px 12px;
+    border: none;
+    background-color: bisque;
+    color: red;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.btn_or:hover{
+    background-color: aqua;
+}
+

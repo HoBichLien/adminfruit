@@ -1,0 +1,69 @@
+.container_an{
+    width: 1200px;
+    margin: 28px auto;
+    padding: 0 20px;
+
+}
+
+.stat_an{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.card_an{
+    background-color: rgb(249, 211, 184);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgb(226, 26, 3);
+}
+
+.stat_card_an{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+
+.stst_title{
+    color: seagreen;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.stat_value_an{
+    font-size: 25px;
+    color: red;
+    font-weight: 600;
+
+}
+
+.stat_trend_an{
+    font-size: 15px;
+    color: blue;
+}
+
+.stat_trend_an i{
+    font-size: 25px;
+    color: green;
+}
+
+.chart_an{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 24px;
+
+}
+
+canvas{
+    width: 100% !important;
+    height: 320px !important;
+
+}
+
+@media(max-width:768px),(max-width:900px){
+    .chart_an,.stat_an{
+        grid-template-columns: 1fr;
+    }
+}

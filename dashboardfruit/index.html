@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD FRUITS</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/css2.css">
+    <link rel="stylesheet" href="assets/css/note.css">
+    
+</head>
+<body>
+    <header>
+        <div class="dash_brand">
+            <div class="dash_logo">
+                <img src="assets/images/logo.png"  alt="">
+            </div>
+            <strong>Admin</strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">
+                    <i class="fa fa-home" style="color: red;"></i>Dashboard</a>
+                </li>
+                <li><a href="order.html">
+                    <i class="fa fa-book" style="color: red;"></i>
+                    Order</a>
+                </li>
+                <li><a href="product.html">
+                    <i class="fa fa-product-hunt" style="color: red;"></i>
+                    Products</a>
+                </li>
+                <li><a href="customers.html">
+                    <i class="fa fa-users" style="color: red;"></i>
+                    Customers</a>
+                </li>
+                <li><a href="user.html">
+                    <i class="fa fa-user-o" style="color: red;"></i>
+                    Users</a>
+                </li>
+                <li><a href="report.html">
+                    <i class="fa fa-filter" style="color: red;"></i>
+                    Report</a>
+                </li>
+                <li><a href="setting.html">
+                    <i class="fa fa-cog" style="color: red;"></i>
+                    Setting</a>
+                </li>
+                <li><a href="analytics.html">
+                    <i class="fa fa-bar-chart" style="color: red;"></i>
+                    Analytics</a>
+                </li>
+                <li><a href="config.html">
+                    <i class="fa fa-cogs" style="color: red;"></i>
+                    Config</a></li>
+            </ul>
+        </nav>
+        <div class="action">
+            <div class="icon-btn">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Admin
+            </div>
+        </div>
+    </header>
+    
+    <div class="container_dash">
+        <!-- Info number -->
+        <section class="dash">
+            <div class="card">
+                <div class="dash_value">
+                    $1564
+                </div>
+                <div class="dash_label">
+                    Total Revenue
+                </div>
+            </div>
+             <div class="card">
+                <div class="dash_value">
+                    $156
+                </div>
+                <div class="dash_label">
+                    Total Order
+                </div>
+            </div> <div class="card">
+                <div class="dash_value">
+                    $64
+                </div>
+                <div class="dash_label">
+                   New Customers
+                </div>
+            </div> <div class="card">
+                <div class="dash_value">
+                    2.4%
+                </div>
+                <div class="dash_label">
+                    Refund Rate
+                </div>
+            </div>
+        </section>
+        <!-- chart info  -->
+         <section class="dash_chart">
+            <div class="dash_chart_box">
+                <h3>Monthly Sales</h3>
+                <canvas id="salesChart"></canvas>
+            </div>
+             <div class="dash_chart_box">
+                <h3>Category Breakdown</h3>
+                <canvas id="pieChart"></canvas>
+            </div>
+         </section>
+         <!-- info order table  -->
+          <section class="dash_table">
+            <h3>Recent Orders</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Customers</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1234</td>
+                        <td>Jesssica</td>
+                        <td>$35</td>
+                        <td>Complated</td>
+                        <td>2025/12/5</td>
+                    </tr>
+                    <tr>
+                        <td>#1236</td>
+                        <td>Roman</td>
+                        <td>$65</td>
+                        <td>Pending</td>
+                        <td>2025/1/25</td>
+                    </tr>
+                    <tr>
+                        <td>#1238</td>
+                        <td>Quan</td>
+                        <td>$75</td>
+                        <td>Cancelled</td>
+                        <td>2025/2/15</td>
+                    </tr>
+                    <tr>
+                        <td>#1240</td>
+                        <td>Jane</td>
+                        <td>$35</td>
+                        <td>Delivered</td>
+                        <td>2025/11/5</td>
+                    </tr>
+                </tbody>
+            </table>
+          </section>
+    </div>
+    <footer><p>© 2025 Fruit Store. Designed & Developed by eProjectBeginner. All rights reserved.</p> </footer>
+    
+    <script src="assets/js/chart.umd.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

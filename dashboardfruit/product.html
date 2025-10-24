@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD PRODUCTS</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/note.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+</head>
+<body>
+    <header>
+        <div class="dash_brand">
+            <div class="dash_logo">
+                <img src="assets/images/logo.png"  alt="">
+            </div>
+            <strong>Admin</strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">
+                    <i class="fa fa-home" style="color: red;"></i>Dashboard</a>
+                </li>
+                <li><a href="order.html">
+                    <i class="fa fa-book" style="color: red;"></i>
+                    Order</a>
+                </li>
+                <li><a href="product.html"  class="active">
+                    <i class="fa fa-product-hunt" style="color: red;"></i>
+                    Products</a>
+                </li>
+                <li><a href="customers.html">
+                    <i class="fa fa-users" style="color: red;"></i>
+                    Customers</a>
+                </li>
+                <li><a href="user.html">
+                    <i class="fa fa-user-o" style="color: red;"></i>
+                    Users</a>
+                </li>
+                <li><a href="report.html">
+                    <i class="fa fa-filter" style="color: red;"></i>
+                    Report</a>
+                </li>
+                <li><a href="setting.html">
+                    <i class="fa fa-cog" style="color: red;"></i>
+                    Setting</a>
+                </li>
+                <li><a href="analytics.html">
+                    <i class="fa fa-bar-chart" style="color: red;"></i>
+                    Analytics</a>
+                </li>
+                <li><a href="config.html">
+                    <i class="fa fa-cogs" style="color: red;"></i>
+                    Config</a></li>
+            </ul>
+        </nav>
+        <div class="action">
+            <div class="icon-btn">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Admin
+            </div>
+        </div>
+    </header>
+        <!-- table product  -->
+    <div class="container_pro">
+        <div class="card_pro">
+            <div class="row_pro">
+                <h2>Product List</h2>
+                <button class="btn_pro" id="addBtn">
+                    +Add Product 
+                </button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Stook</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="assets/images/products/chery.jpg" width="50" alt="chery">
+                        </td>
+                        <td>Chery</td>
+                        <td>Fruits</td>
+                        <td>$12</td>
+                        <td>345</td>
+                         <td>
+                            <span class="status_pro Out">
+                                Out
+                            </span>
+                        </td>
+                        <td class="acction_pro">
+                            <button class="edit_pro">
+                                Edit
+                            </button>
+                            <button class="delete_pro">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="assets/images/products/dau.jpg" width="50" alt="dau">
+                        </td>
+                        <td>Dau</td>
+                        <td>Fruits</td>
+                        <td>$34</td>
+                        <td>345</td>
+                         <td>
+                            <span class="status_pro Available">
+                               Available
+                            </span>
+                        </td>
+                        <td class="acction_pro">
+                            <button class="edit_pro">
+                                Edit
+                            </button>
+                            <button class="delete_pro">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="assets/images/products/mango.jpg" width="50" alt="chery">
+                        </td>
+                        <td>Chery</td>
+                        <td>Fruits</td>
+                        <td>$12</td>
+                        <td>345</td>
+                         <td>
+                            <span class="status_pro Out">
+                                Out
+                            </span>
+                        </td>
+                        <td class="acction_pro">
+                            <button class="edit_pro">
+                                Edit
+                            </button>
+                            <button class="delete_pro">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="assets/images/products/dragon_fruist.jpg" width="50" alt="dragon_fruist">
+                        </td>
+                        <td>Dragon_fruist</td>
+                        <td>Fruits</td>
+                        <td>$112</td>
+                        <td>3452</td>
+                         <td>
+                            <span class="status_pro Available">
+                                Available
+                            </span>
+                        </td>
+                        <td class="acction_pro">
+                            <button class="edit_pro">
+                                Edit
+                            </button>
+                            <button class="delete_pro">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="assets/images/products/lemonate.jpg" width="50" alt="chery">
+                        </td>
+                        <td>lemonate</td>
+                        <td>Fruits</td>
+                        <td>$412</td>
+                        <td>1345</td>
+                         <td>
+                            <span class="status_pro Out">
+                                Out
+                            </span>
+                        </td>
+                        <td class="acction_pro">
+                            <button class="edit_pro">
+                                Edit
+                            </button>
+                            <button class="delete_pro">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- add product  -->
+     <div class="add_pro" id="fadePopup">
+        <div class="popup_pro">
+            <h3>Add Product</h3>
+            <form action="#">
+                <label for="">ProductName</label>
+                <input type="text" name="" id="" placeholder="Enter name">
+                <label for="">Price</label>
+                <input type="number" name="" id="" placeholder="Enter price">
+                <label for="">Stook</label>
+                <input type="number" name="" id="" placeholder="Enter stook">
+                <label for="">Upload Image</label>
+                <input type="file" name="" id="uploadImg" accept="image/*" >
+                <div class="pre_pro" id="imgPreview"></div>
+                <button class="btn_pro" type="button" onclick="closeFade()">Save</button>
+            </form>
+        </div>
+     </div>
+    <!-- edit product  -->
+     <div class="edit_pro_slide" id="slidePopup">
+        <div class="edit_popup">
+            <h3>Edit Product</h3>
+            <form action="#">
+                <label for="">ProductName</label>
+                <input type="text" value="Chery">
+                <label for="">Category</label>
+                <select >
+                    <option value="">Fruit</option>
+                    <option value="">Basket Fruit</option>
+                    <option value="">Juice</option>
+                </select>
+                <label for="">Status</label>
+                <select >
+                    <option value="">Available</option>
+                    <option value="">Out</option>
+                </select>
+                <button class="btn_pro" type="button" onclick="closeSlide()">Save Changes</button>
+            </form>
+        </div>
+     </div>
+
+      <footer><p>© 2025 Fruit Store. Designed & Developed by eProjectBeginner. All rights reserved.</p> </footer>
+
+     <script src="assets/js/product.js"></script>
+</body>
+</html>

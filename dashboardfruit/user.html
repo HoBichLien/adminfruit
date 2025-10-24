@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD USERS</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/note.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+</head>
+<body>
+    <header>
+        <div class="dash_brand">
+            <div class="dash_logo">
+                <img src="assets/images/logo.png"  alt="">
+            </div>
+            <strong>Admin</strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">
+                    <i class="fa fa-home" style="color: red;"></i>Dashboard</a>
+                </li>
+                <li><a href="order.html" >
+                    <i class="fa fa-book" style="color: red;"></i>
+                    Order</a>
+                </li>
+                <li><a href="product.html">
+                    <i class="fa fa-product-hunt" style="color: red;"></i>
+                    Products</a>
+                </li>
+                <li><a href="customers.html" >
+                    <i class="fa fa-users" style="color: red;"></i>
+                    Customers</a>
+                </li>
+                <li><a href="user.html"  class="active">
+                    <i class="fa fa-user-o" style="color: red;"></i>
+                    Users</a>
+                </li>
+                <li><a href="report.html">
+                    <i class="fa fa-filter" style="color: red;"></i>
+                    Report</a>
+                </li>
+                <li><a href="setting.html">
+                    <i class="fa fa-cog" style="color: red;"></i>
+                    Setting</a>
+                </li>
+                <li><a href="analytics.html">
+                    <i class="fa fa-bar-chart" style="color: red;"></i>
+                    Analytics</a>
+                </li>
+                <li><a href="config.html">
+                    <i class="fa fa-cogs" style="color: red;"></i>
+                    Config</a></li>
+            </ul>
+        </nav>
+        <div class="action">
+            <div class="icon-btn">
+                <i class="fa fa-bell"></i>
+                <i class="fa fa-user"></i>
+                Admin
+            </div>
+        </div>
+    </header>
+        <!-- tablle  -->
+    <div class="container_us">
+        <div class="card_us">
+            <h2>User Management</h2>
+            <div class="table_header_us">
+                <button class="add-btn" onclick="openPopup()">
+                    +Add User
+                </button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Avata</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="userTable">
+                    <tr>
+                        <td>
+                            <img src="assets/images/avata/ava1.jpg" width="50" alt="">
+                        </td>
+                        <td> Jane</td>
+                        <td>jane@gmail.com</td>
+                        <td>Admin</td>
+                        <td>
+                            <span class="status_us action_us">
+                                Action
+                            </span>
+                        </td>
+                        <td>
+                            <button class="action-btn" onclick="editUser(this)">
+                                <i class="fa fa-pencil"></i>
+                            </button>
+                            <button class="action-btn" onclick="deleteUser(this)">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <img src="assets/images/avata/ava2.jpg" width="50" alt="">
+                        </td>
+                        <td> Dam</td>
+                        <td>dam@gmail.com</td>
+                        <td>User</td>
+                        <td>
+                            <span class="status_us banned_us">
+                                Banned
+                            </span>
+                        </td>
+                        <td>
+                            <button class="action-btn" onclick="editUser(this)">
+                                <i class="fa fa-pencil"></i>
+                            </button>
+                            <button class="action-btn" onclick="deleteUser(this)">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <!-- close  -->
+    <div class="olay_us" id="overlay" onclick="closePopup()"> </div>
+  
+    <!-- form add user  -->
+    <div class="popup_us" id="popup">
+        <div class="pop_head_us">
+            <span id="popupTitle">
+                Add User
+            </span>
+            <button onclick="closePopup()">X</button>
+        </div>
+        <div class="pop_body_us">
+            <form id="userForm">
+                <label for="">Name</label>
+                <input type="text" name="" id="userName" required>
+                <label for="">Email </label>
+                <input type="email" name="" id="userEmail" required>
+                <label for="">Role</label>
+                <select name="" id="userRole">
+                    <option value="">Admin</option>
+                    <option value="">User</option>
+                    <option value="">Customer</option>
+                </select>
+                <label for="">Status</label>
+                <select name="" id="userStatus">
+                    <option value="">Active</option>
+                    <option value="">Banned</option>
+                </select>
+                <button type="submit" class="save_us">Save</button>
+            </form>
+        </div>
+    </div>
+    <footer><p>© 2025 Fruit Store. Designed & Developed by eProjectBeginner. All rights reserved.</p> </footer>
+    <script src="assets/js/user.js"></script>
+</body>
+</html>

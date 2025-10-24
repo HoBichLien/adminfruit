@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD REPORT</title>
+    <link rel="stylesheet" href="assets/css/note.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/report.css">
+
+</head>
+<body>
+    <header>
+        <div class="dash_brand">
+            <div class="dash_logo">
+                <img src="assets/images/logo.png"  alt="">
+            </div>
+            <strong>Admin</strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">
+                    <i class="fa fa-home" style="color: red;"></i>Dashboard</a>
+                </li>
+                <li><a href="order.html">
+                    <i class="fa fa-book" style="color: red;"></i>
+                    Order</a>
+                </li>
+                <li><a href="product.html" >
+                    <i class="fa fa-product-hunt" style="color: red;"></i>
+                    Products</a>
+                </li>
+                <li><a href="customers.html">
+                    <i class="fa fa-users" style="color: red;"></i>
+                    Customers</a>
+                </li>
+                <li><a href="user.html">
+                    <i class="fa fa-user-o" style="color: red;"></i>
+                    Users</a>
+                </li>
+                <li><a href="report.html"  class="active">
+                    <i class="fa fa-filter" style="color: red;"></i>
+                    Report</a>
+                </li>
+                <li><a href="setting.html">
+                    <i class="fa fa-cog" style="color: red;"></i>
+                    Setting</a>
+                </li>
+                <li><a href="analytics.html">
+                    <i class="fa fa-bar-chart" style="color: red;"></i>
+                    Analytics</a>
+                </li>
+                <li><a href="config.html">
+                    <i class="fa fa-cogs" style="color: red;"></i>
+                    Config</a></li>
+            </ul>
+        </nav>
+        <div class="action">
+            <div class="icon-btn">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Admin
+            </div>
+        </div>
+    </header>
+    <!-- header table  -->
+    <div class="container_rp">
+        <p class="breadcrumb_rp">
+            Dashboard / Reports 
+        </p>
+        <div class="row_rp">
+            <h2>Sales Reports</h2>
+            <div class="toggle">
+                <button id="dailyBtn" class="active" onclick="showReport('daily')">Daily</button>
+                <button id="monthlyBtn"  onclick="showReport('monthly')">Monthly</button>
+            </div>
+        </div>
+        <div class="filter_rp">
+            <label for="">Form:</label>
+            <input type="date" id="fromDate">
+            <label for="">To:</label>
+            <input type="date" id="toDate">
+            <button onclick="applyFilter()">Apply</button>
+        </div>
+        <!-- DAILLY -->
+         <div id="dailyReport">
+            <div class="card_rp">
+                <h2>Today's Overview</h2>
+                <div class="stats_rp">
+                    <div class="stat_rp">
+                        <i class="fa fa-usd" aria-hidden="true"></i>
+                        Revenue
+                        <br> <b>$2564</b>
+                    </div>
+                    <div class="stat_rp">
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Orders
+                        <br> <b>64</b>
+                    </div>
+                    <div class="stat_rp">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        Customers 
+                        <br> <b>56</b>
+                    </div>
+                    <div class="stat_rp">
+                        <i class="fa fa-exchange" aria-hidden="true"></i>
+                        Return
+                        <br> <b>2</b>
+                    </div>
+                </div>
+            </div>
+            <div class="card_rp">
+                <h2>Order Detail</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Customer</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dailyTable">
+                        <tr>
+                            <td>001</td>
+                            <td>Jane</td>
+                            <td>$35</td>
+                            <td>
+                                <i class="fa fa-check-square-o" style="color: rgb(20, 235, 20);"></i>
+                                Complated
+                            </td>
+                            <td>09:20 AM</td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>Dam</td>
+                            <td>$65</td>
+                            <td>
+                                <i class="fa fa-truck" style="color: rgb(30, 14, 248);"></i>
+                                Shiped
+                            </td>
+                            <td>10:20 AM</td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>Anna</td>
+                            <td>$15</td>
+                            <td>
+                                <i class="fa fa-times" style="color: red;"></i>
+                                Cancelled
+                            </td>
+                            <td>11:50 AM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+         </div>
+         
+         <!-- MONTHLY  -->
+          <div id="monthlyReport" class="hidden">
+            <div class="card_rp">
+                <h2>Monthly Revenue Chart</h2>
+                <div class="chart" id="chartContainer"></div>
+            </div>
+            <div class="card_rp">
+                <h2>Sumary</h2>
+                <div class="stats_rp">
+                    <div class="stat_rp">
+                        <i class="fa fa-usd" aria-hidden="true"></i>
+                        Total Revenue
+                        <br> <b>$24564</b>
+                    </div>
+                    <div class="stat_rp">
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Total Orders
+                        <br> <b>764</b>
+                    </div>
+                    <div class="stat_rp">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        New Customers 
+                        <br> <b>856</b>
+                    </div>
+                    <div class="stat_rp">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        Repeat Rate
+                        <br> <b>68%</b>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <footer><p>© 2025 Fruit Store. Designed & Developed by eProjectBeginner. All rights reserved.</p> </footer>
+    <script src="assets/js/report.js"></script>
+</body>
+</html>

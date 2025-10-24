@@ -1,0 +1,137 @@
+:root{
+    --mauchinh:#43a047;
+    --mauphu:#ffb74d;
+    --maunen:#f9fff9;
+    --maupanel:#d7d4f4;
+    --mauxam:#6b7280;
+    --bovien:#10px;
+    --dobong:0 4px 14px rgba(0,0,0,0.06);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: var(--maunen);
+    font-family: "inter",sans-serif;
+    color: #1e293b;
+}
+
+
+/* =============container_dash================== */
+
+.container_dash{
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* == Info number == */
+
+.dash{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.card{
+    background-color: var(--maupanel);
+    border-radius:15%;
+    box-shadow: var(--dobong);
+    padding: 18px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover{
+    transform: translateY(-4px);
+}
+
+.dash_value{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--mauchinh);
+}
+
+.dash_label{
+    font-size: 13px;
+    color: #ef2020;
+    font-weight: 900;
+}
+
+/* ====chart info==== */
+
+.dash_chart{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.dash_chart_box{
+    background-color: var(--maupanel);
+    border-radius: 5%;
+    box-shadow: var(--dobong);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 320px; 
+}
+
+.dash_chart_box h3{
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #ef2020;
+}
+
+canvas{
+    width: 90%;
+    height: 200px;
+}
+
+/* ============info order table============== */
+
+/* ===== Table ===== */
+.dash_table{
+  margin-top:20px;
+  background:rgb(242, 210, 210);
+  border-radius:var(--bovien);
+  box-shadow:var(--dobong);
+  padding:20px;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+th,td{
+    padding:10px;
+    text-align:left;
+    border-bottom:1px solid #eef3ed;
+    font-size:14px;
+}
+th{
+    color:var(--mauxam);
+}
+tr:hover td{
+    background:#f6fbf6;
+}
+
+/* ===== Footer ===== */
+footer{
+    text-align:center;
+    padding:20px;
+    color:var(--mauxam);
+    font-size:13px;
+    margin-top:20px;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:900px){
+  .dash_chart{grid-template-columns:1fr}
+  nav ul{flex-wrap:wrap;gap:12px}
+}

@@ -1,0 +1,270 @@
+ 
+body.dark-mode {
+  color: #ed0a0a;
+  background: linear-gradient(
+    -45deg,
+    rgba(110, 77, 77, 0.6),
+    rgba(253, 156, 156, 0.6),
+    rgba(84, 52, 52, 0.6),
+    rgba(21, 9, 9, 0.6)
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite alternate;
+  backdrop-filter: blur(12px);
+}
+
+@keyframes gradientMove{
+    0% {background-position: 0% 50% ;}
+    100% {background-position: 100% 50%; }
+}
+.container_con{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top_con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_con h1{
+    font-size: 25px;
+    font-weight: 700;
+    color: red;
+}
+
+.top_con button{
+    background-color: aliceblue;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 6px 18px red;
+    transition: transform 0.3s;
+    color: blue;
+    font-size: 25px;
+}
+
+.top_con button:hover{
+    transform: translateY(-4px);
+}
+
+.top_con i{
+    color: rgb(241, 241, 55);
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.stats_row_con{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+.card_con {
+    background-color: antiquewhite;
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgb(248, 144, 8);
+}
+
+.card_con h3{
+    margin: 8px 0;
+    color: rebeccapurple;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card_con p{
+    color: blue;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.card_con i{
+    color: rgb(7, 206, 206);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.chart_con{
+    display: flex;
+    gap: 10px;
+}
+
+.chart_box_con{
+    flex: 1;
+    background-color: bisque;
+    backdrop-filter: blur(12px);
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 6px 28px rgb(221, 123, 4);
+}
+
+#pieChart{
+    max-width: 280px;
+    max-height: 280px;
+}
+
+.btn_row_con{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn_row_con button{
+    background-color: rgb(120, 120, 243);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    color: aliceblue;
+    cursor: pointer;
+    font-weight: 800;
+    box-shadow: 0 6px 18px rgb(2, 2, 151);
+}
+
+.btn_row_con i{
+    color: rgb(202, 25, 8);
+}
+
+.setting_con{
+    display: flex;
+    gap: 20px;
+}
+
+.section_con{
+    flex:1;
+    background-color: beige;
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgb(239, 147, 10);
+}
+
+.section_con h2{
+    margin-top: 2px;
+    text-align: center;
+    color: blue;
+
+}
+
+.section_con label{
+    display: block;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: brown;
+}
+
+.section_con input{
+    width: 90%;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 2px solid sandybrown;
+    color: rgb(5, 129, 129);
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.section_con input::placeholder{
+    color: blueviolet;
+}
+
+.color_con{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.color_con input{
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    background-color: antiquewhite;
+}
+
+.color_con button{
+    padding: 8px 14px;
+    border: none;
+    background-color: blueviolet;
+    border-radius: 18px;
+    color: aliceblue;
+}
+
+.table_section_con{
+    background-color: rgb(207, 229, 249);
+    box-shadow: 0 6px 18px blue;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 18px;
+    position: relative;
+}
+
+.table_section_con .add_con{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: rgb(136, 154, 241);
+    color: aliceblue;
+    border: none;
+    border-radius: 18px;
+    padding: 8px 18px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 6px 18px blue;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+
+table th,table td{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid skyblue;
+}
+
+table th{
+    color: blue;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ship{
+    color: rgb(4, 211, 4);
+    font-weight: 700;
+}
+
+.pen{
+    color: rgb(140, 174, 6);
+    font-weight: 700;
+}
+
+.deli{
+    color: rgb(211, 4, 4);
+    font-weight: 700;
+}
+
+.upload_box_con{
+    margin-top: 10px;
+
+}
+
+.upload_box_con input{
+    display: block;
+    margin-top: 6px;
+    color: red;
+}
