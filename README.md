@@ -1,4 +1,4 @@
-![License: Envato](https://img.shields.io/badge/License-Envato%20Regular-blue.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 # 🍑 DashboardFruit – Pastel Admin Dashboard Template
 
@@ -71,3 +71,86 @@ Its minimalist **pastel color palette** and soft design style make it perfect fo
 ---
 
 ## 📁 Folder Structure
+---
+dashboardfruit/
+│
+├── index.html
+├── analytics.html
+├── order.html
+├── product.html
+├── user.html
+├── customer.html
+├── report.html
+├── setting.html
+├── config.html
+│
+├── assets/
+│ ├── css/
+│ │ ├── analytics.css
+│ │ ├── css2.css
+│ │ ├── config.css
+│ │ ├── dashboard.css
+│ │ ├── order.css
+│ │ ├── customer.css
+│ │ ├── note.css
+│ │ ├── font-awesome.css
+│ │ ├── font-awesome.min.css
+│ │ ├── product.css
+│ │ ├── report.css
+│ │ ├── setting.css
+│ │ └── user.css
+│ ├── js/
+│ │ ├── analytics.js
+│ │ ├── chart.umd.min.js
+│ │ ├── config.js
+│ │ ├── dashboard.js
+│ │ ├── product.js
+│ │ ├── report.js
+│ │ ├── setting.js
+│ │ └── user.js
+│ ├── images/
+│ │ ├── logo.png
+│ │ ├── avata/
+│ │ └── products/
+│ └── fonts/
+│
+└── documentation/
+└── documentation.html
+---
+
+---
+
+## 💻 Technologies Used
+- **Frontend:** HTML5, CSS3, JavaScript  
+- **Charts:** Chart.js  
+- **Icons:** Font Awesome  
+- **Fonts:** Google Fonts – Inter  
+- **Design Assets:** Canva (for logo), Unsplash / Pexels (for free images)
+
+---
+
+## 🌱 Future Updates
+- Backend Integration (Node.js / Flask)  
+- Dark Mode option  
+- Login & Authentication pages  
+- DataTables with CRUD functionality  
+
+---
+
+## 📄 License
+Released under the [Envato Regular License](https://themeforest.net/licenses/standard).  
+You can use this template for **one commercial project**. Redistribution or resale is not allowed.
+
+© 2025 Fruit Store. Designed & Developed by **eProjectBeginner**.  
+All rights reserved.
+
+---
+
+## 📬 Support
+If you have any questions, issues, or need customization support:  
+📧 **eprojectbeginer@gmail.com**
+
+---
+
+> 💎 Thank you for choosing DashboardFruit!  
+> We hope you enjoy building with it. 🍇
