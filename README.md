@@ -71,7 +71,7 @@ Its minimalist **pastel color palette** and soft design style make it perfect fo
 ---
 
 ## 📁 Folder Structure
----
+```
 dashboardfruit/
 │
 ├── index.html
@@ -116,7 +116,7 @@ dashboardfruit/
 │
 └── documentation/
 └── documentation.html
----
+```
 
 ---
 
