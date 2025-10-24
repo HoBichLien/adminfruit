@@ -5,7 +5,7 @@
 ![Logo](https://github.com/HoBichLien/adminfruit/blob/main/thumnail.png?raw=true)
 
 ## 📘 Documentation
-📗 [View Full Documentation](https://<your-demo>.vercel.app/documentation/documentation.html)
+📗 [View Full Documentation](https://adminfruit.vercel.app/documentation/documentation.html)
 
 ---
 
