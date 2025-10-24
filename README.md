@@ -2,7 +2,7 @@
 
 # 🍑 DashboardFruit – Pastel Admin Dashboard Template
 
-![Logo](https://github.com/<yourname>/<repo>/blob/main/assets/images/logo.png?raw=true)
+![Logo](https://github.com/HoBichLien/adminfruit/blob/main/logo.png?raw=true)
 
 ## 📘 Documentation
 📗 [View Full Documentation](https://<your-demo>.vercel.app/documentation/documentation.html)
@@ -29,12 +29,15 @@ Its minimalist **pastel color palette** and soft design style make it perfect fo
 > Replace links below with your actual GitHub image URLs  
 > (Use `?raw=true` at the end to show correctly)
 
-![Dashboard Page](https://github.com/<yourname>/<repo>/blob/main/assets/images/screenshots/dashboard.png?raw=true)  
-![Analytics Page](https://github.com/<yourname>/<repo>/blob/main/assets/images/screenshots/analytics.png?raw=true)  
-![Products Page](https://github.com/<yourname>/<repo>/blob/main/assets/images/screenshots/product.png?raw=true)  
-![Orders Page](https://github.com/<yourname>/<repo>/blob/main/assets/images/screenshots/order.png?raw=true)  
-![Users Page](https://github.com/<yourname>/<repo>/blob/main/assets/images/screenshots/user.png?raw=true)  
-![Settings Page](https://github.com/<yourname>/<repo>/blob/main/assets/images/screenshots/setting.png?raw=true)
+![Admin Dashboard](https://github.com/HoBichLien/adminfruit/blob/main/01_admin_dashboard.png?raw=true)
+![Admin Order](https://github.com/HoBichLien/adminfruit/blob/main/02_admin_order.png?raw=true)
+![Admin Product](https://github.com/HoBichLien/adminfruit/blob/main/03_admin_products.png?raw=true)
+![Admin Customer](https://github.com/HoBichLien/adminfruit/blob/main/04_admin_customers.png?raw=true)
+![Admin User](https://github.com/HoBichLien/adminfruit/blob/main/05_admin_user.png?raw=true) 
+![Admin Report](https://github.com/HoBichLien/adminfruit/blob/main/06_admin_report.png?raw=true)
+![Admin Setting](https://github.com/HoBichLien/adminfruit/blob/main/07_admin_setting.png?raw=true)
+![Admin Analytics](https://github.com/HoBichLien/adminfruit/blob/main/08_admin_analytics.png?raw=true)
+![Admin Config](https://github.com/HoBichLien/adminfruit/blob/main/09_admin_config.png?raw=true)
 
 > 💡 Tip: Capture screenshots using **Chrome DevTools → Capture full-size screenshot** for the best preview results.
 
